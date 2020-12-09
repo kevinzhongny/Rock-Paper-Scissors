@@ -12,6 +12,9 @@ Players choose rock, paper, or scissors.
 ## Design Choices
 
 Simple user interface to pick rock, papers, or scissors
+
 Keeps track of score
+
 Option to play with another person or computer
+
 Potentially add betting option
