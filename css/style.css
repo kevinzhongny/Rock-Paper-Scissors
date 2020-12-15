@@ -1,0 +1,38 @@
+body {
+    background-color:darkgrey;
+    margin: 0 auto;
+    padding: 0;
+}
+
+h1 {
+    font-size: 80px;
+    text-align: center;
+    font-family: 'Shojumaru', cursive;
+    font-weight: bolder;
+    font-style: italic;
+    margin: 0 0 0 0;
+    background-color: whitesmoke;
+}
+
+.choice:hover {
+    background-color: gold;
+}
+
+#gameboard {
+    display: grid;
+    background-color: grey;
+    grid-template-areas:
+        "choice choice choice"
+        "space space space"
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 0 0 2vw;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 0.5rem;
+    text-align: center;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>ROCK PAPER SCISSORS</h1>
+
+
+    <div id="gameboard">
+        <input type ="image" class="choice" value="rock" id="rock" src="images/rock.webp">
+        <input type ="image" class="choice" value="paper" id="paper" src="images/paper.webp">
+        <input type ="image" class="choice" value="scissors" id="scissors" src="images/scissors.webp">
+
+    </div>
+
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Player 1 Score</th>
+                <th>Player 2 Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="P1Score">0</td>
+                <td id="P2Score">0</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous">
+    </script>
+    <script src='js/script.js'></script>
+</body>
+</html>
