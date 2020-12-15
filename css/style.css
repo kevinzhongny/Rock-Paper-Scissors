@@ -1,6 +1,7 @@
 body {
     background-color:darkgrey;
     margin: 0 auto;
+    height: 100%;
     padding: 0;
 }
 
@@ -12,6 +13,15 @@ h1 {
     font-style: italic;
     margin: 0 0 0 0;
     background-color: whitesmoke;
+    padding: 1vmin 1rem;
+}
+
+.choice {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .choice:hover {
@@ -28,7 +38,9 @@ h1 {
 
 table {
     border-collapse: collapse;
-    margin: 0 0 0 2vw;
+    /* margin: 0 0 0 2vw; */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 td, th {
