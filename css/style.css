@@ -1,6 +1,6 @@
 body {
     background-color:darkgrey;
-    margin: 0 auto;
+    margin: auto;
     height: 100%;
     padding: 0;
 }
@@ -9,7 +9,7 @@ h1 {
     font-size: 80px;
     font-size: 5vw;
     text-align: center;
-    font-family: 'Shojumaru', cursive;
+    font-family: 'Shojumaru';
     font-weight: bolder;
     font-style: italic;
     margin: 0 0 0 0;
@@ -31,15 +31,54 @@ h1 {
 
 #gameboard {
     display: grid;
+    position: relative;
+    border: 1 px;
+    width: 100vw;
     background-color: grey;
+    grid-gap: 10px;
     grid-template-areas:
         "choice choice choice"
-        "space space space"
+
+}
+
+footer {
+    display: block;
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type=submit] {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color:rgb(74, 74, 175);
+}
+
+li {
+    text-align: left;
+}
+
+.rules-window {
+    display: hide;
+    position: absolute;
+    width: 25%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Righteous', cursive;
+    z-index: 100;
+    border-radius: 5px;
+    opacity: 1;
+    background-color: white;
 }
 
 table {
     border-collapse: collapse;
-    /* margin: 0 0 0 2vw; */
     margin-left: auto;
     margin-right: auto;
 }

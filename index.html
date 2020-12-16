@@ -9,29 +9,50 @@
 <body>
     <h1>ROCK PAPER SCISSORS</h1>
 
-
     <div id="gameboard">
         <input type ="image" class="choice" value="rock" id="rock" src="images/rock.webp">
         <input type ="image" class="choice" value="paper" id="paper" src="images/paper.webp">
-        <input type ="image" class="choice" value="scissors" id="scissors" src="images/scissors.webp">
-
+        <input type ="image" class="choice" value="scissors" id="scissors" src="images/scissors.webp">  
     </div>
 
     <br>
-    <table>
-        <thead>
-            <tr>
-                <th>Player 1 Score</th>
-                <th>Player 2 Score</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td id="P1Score">0</td>
-                <td id="P2Score">0</td>
-            </tr>
-        </tbody>
-    </table>
+
+    <div class="rules-window">
+        <li>Select rock, paper, or scissors</li>
+        <li>Computer will select rock, paper, or scissors at the same time</li>
+        <li>After 4 seconds, both players' choices will be revealed</li>
+        <li>The player's choice will be in green</li>
+        <li>The computer's choice will be in orange</li>
+        <li>If both players chose the same option, the choice will be in red</li>
+        <br>
+        <form>
+            <input type="submit" value="Start Game" id="start_game">
+        </form>
+    </div>
+
+    <footer>
+        <table>
+            <thead>
+                <tr>
+                    <th>Player 1 Score</th>
+                    <th>Computer Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="P1Score">0</td>
+                    <td id="P2Score">0</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <form>
+            <input type ="submit" value="Rules" id="rules">
+            <br>
+            <br>
+            <input type ="submit" value="Restart" id="restart">
+        </form>
+    </footer>
 
     <script
         src="https://code.jquery.com/jquery-3.5.1.js"

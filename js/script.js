@@ -114,4 +114,21 @@ $(":image").click(function() {
     setTimeout(function() { updateComputerScore() }, 4000);
     setTimeout(function() { resetColor($(".choice")) }, 10000);
     
-  })
+})
+
+
+$('form').on('submit', (event) => {
+    event.preventDefault();
+    $("#restart").click(function() {
+        location.reload(); // reload page upon clicking restart 
+    })
+    $("#rules").click(function() {
+        $(".rules-window").fadeIn(1000);
+    })
+    $("#start_game").click(function() {
+        $(".rules-window").fadeOut(1000);
+    })
+})
+
+
+
