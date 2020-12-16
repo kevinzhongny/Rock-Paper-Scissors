@@ -65,7 +65,7 @@ li {
 }
 
 .rules-window {
-    display: hide;
+    display: none;
     position: absolute;
     width: 25%;
     margin: 0 auto;
